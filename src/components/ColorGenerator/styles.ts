@@ -38,5 +38,18 @@ export const Container = styled.main`
 
     @media (max-width: 700px) {
         width: 100%;
+
+        .colors {
+            display: grid;
+            grid-template-columns: 7rem 7rem 7rem;
+            gap: 1rem;
+            
+            .color {
+                width: 7rem;
+                input {
+                    width: 90%;
+                }
+            }
+        }
     }
 `
