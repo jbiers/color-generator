@@ -1,9 +1,15 @@
+import { ColorItem } from "../ColorItem/ColorItem";
 import { Container } from "./styles";
 
 export function ColorList() {
     return (
         <Container>
-            ColorList
+            <ColorItem />
+            <ColorItem />
+            <ColorItem />
+            <ColorItem />
+            <ColorItem />
+            <ColorItem />
         </Container>
     )
 }

@@ -1,5 +1,10 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-    border: 1px solid red;
+    width: 45rem;
+    margin: 1.875rem auto 0;
+
+    @media (max-width: 700px) {
+        width: 100%;
+    }
 `
