@@ -1,29 +1,37 @@
-import { useState } from "react";
-import { GeneratedColor } from "../GeneratedColor";
-import { GeneratedColorCode } from "../GeneratedColorCode";
-import { Container } from "./styles";
+import { useState } from "react"
+import { GeneratedColor } from "../GeneratedColor"
+import { GeneratedColorCode } from "../GeneratedColorCode"
+import { Container } from "./styles"
+
+function generateRGBString(redValue: number, greenValue: number, blueValue: number) {
+
+    return '#'
+        + `${redValue.toString(16).length > 1 ? redValue.toString(16) : '0' + redValue.toString(16)}`
+        + `${greenValue.toString(16).length > 1 ? greenValue.toString(16) : '0' + greenValue.toString(16)}`
+        + `${blueValue.toString(16).length > 1 ? blueValue.toString(16) : '0' + blueValue.toString(16)}`
+}
 
 export function ColorGenerator() {
-    const [red, setRed] = useState<Number>(0)
-    const [green, setGreen] = useState<Number>(0)
-    const [blue, setBlue] = useState<Number>(0)
+    const [redValue, setRedValue] = useState<number>(0)
+    const [greenValue, setGreenValue] = useState<number>(0)
+    const [blueValue, setBlueValue] = useState<number>(0)
 
-    const rgbValue = "#FF0FAF";
+    const rgbValue = generateRGBString(redValue, greenValue, blueValue)
 
     return (
         <Container>
             <div className="colors">
                 <div className="color red">
                     <input type="range" id="red" name="red"
-                        min="0" max="255" defaultValue="0" onChange={change => setRed(parseInt(change.target.value))} />
+                        min="0" max="255" defaultValue="0" onChange={change => setRedValue(parseInt(change.target.value))} />
                 </div>
                 <div className="color green">
                     <input type="range" id="red" name="red"
-                        min="0" max="255" defaultValue="0" onChange={change => setGreen(parseInt(change.target.value))} />
+                        min="0" max="255" defaultValue="0" onChange={change => setGreenValue(parseInt(change.target.value))} />
                 </div>
                 <div className="color blue">
                     <input type="range" id="red" name="red"
-                        min="0" max="255" defaultValue="0" onChange={change => setBlue(parseInt(change.target.value))} />
+                        min="0" max="255" defaultValue="0" onChange={change => setBlueValue(parseInt(change.target.value))} />
                 </div>
             </div>
 
