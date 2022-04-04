@@ -6,6 +6,10 @@ export const Container = styled.main`
     padding: 2.313rem;
     border-radius: 0.188rem;
     background: var(--light-gray);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 
     .colors {
         display: grid;
@@ -33,6 +37,24 @@ export const Container = styled.main`
 
         .blue {
             background: var(--blue);
+        }
+    }
+
+    .addColorBtn {
+        margin-top: 1.5rem;
+        width: 10rem;
+        height: 3rem;
+        border: none;
+        border-radius: 0.188rem;
+        font-weight: bold;
+
+        background: var(--dark-gray);
+        color: var(--white);
+
+        transition: 0.2s filter;
+
+        &:hover {
+            filter: brightness(0.9);
         }
     }
 

@@ -9,7 +9,7 @@ interface GeneratedColorCodeProps {
 export function GeneratedColorCode(props: GeneratedColorCodeProps) {
     return (
         <ColorCode>
-            rgb (
+            RGB (
             <span className="rgbRed">{props.redValue}</span>,&nbsp;
             <span className="rgbGreen">{props.greenValue}</span>,&nbsp;
             <span className="rgbBlue">{props.blueValue}</span>)

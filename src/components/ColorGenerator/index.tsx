@@ -38,6 +38,7 @@ export function ColorGenerator() {
             <GeneratedColor rgbValue={rgbValue} />
             <GeneratedColorCode redValue={redValue} greenValue={greenValue} blueValue={blueValue} />
 
+            <button className="addColorBtn">Save Color</button>
         </Container>
     )
 }
