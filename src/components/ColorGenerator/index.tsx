@@ -8,6 +8,8 @@ export function ColorGenerator() {
     const [green, setGreen] = useState<Number>(0)
     const [blue, setBlue] = useState<Number>(0)
 
+    const rgbValue = "#FF0FAF";
+
     return (
         <Container>
             <div className="colors">
@@ -25,7 +27,7 @@ export function ColorGenerator() {
                 </div>
             </div>
 
-            <GeneratedColor />
+            <GeneratedColor rgbValue={rgbValue} />
             <GeneratedColorCode />
 
         </Container>

@@ -1,7 +1,11 @@
 import styled from "styled-components"
 
-export const Color = styled.div`
-    background: var(--blue);
+interface Props {
+    color?: string;
+}
+
+export const Color = styled.div<Props>`
+    background: ${props => props.color};
 
     margin: 3.125rem auto;
 

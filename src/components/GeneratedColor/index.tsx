@@ -1,7 +1,12 @@
 import { Color } from "./styles"
 
-export function GeneratedColor() {
+interface GeneratedColorProps {
+    rgbValue: String;
+}
+
+export function GeneratedColor(props: GeneratedColorProps) {
+
     return (
-        <Color />
+        <Color color={props.rgbValue as string} />
     )
 }
