@@ -1,4 +1,5 @@
 import { GeneratedColor } from "../GeneratedColor";
+import { GeneratedColorCode } from "../GeneratedColorCode";
 import { Container } from "./styles";
 
 export function ColorGenerator() {
@@ -20,6 +21,8 @@ export function ColorGenerator() {
             </div>
 
             <GeneratedColor />
+            <GeneratedColorCode />
+
         </Container>
     )
 }

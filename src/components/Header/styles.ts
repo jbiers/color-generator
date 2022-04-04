@@ -5,6 +5,7 @@ export const Container = styled.header`
     justify-content: center;
     align-items: center;
     text-align: center;
+    color: var(--dark-gray);
 
     h1 {
         margin-top: 5rem;
