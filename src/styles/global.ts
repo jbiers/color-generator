@@ -40,6 +40,7 @@ export const GlobalStyle = createGlobalStyle`
     body {
         // background: var(the background color)
         -webkit-font-smoothing: antialised;
+        width: 100%;
     }
 
     body, input, textarea, button {
