@@ -36,7 +36,7 @@ export function ColorGenerator() {
             </div>
 
             <GeneratedColor rgbValue={rgbValue} />
-            <GeneratedColorCode />
+            <GeneratedColorCode redValue={redValue} greenValue={greenValue} blueValue={blueValue} />
 
         </Container>
     )

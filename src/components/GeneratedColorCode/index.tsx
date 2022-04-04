@@ -1,12 +1,18 @@
 import { ColorCode } from "./styles";
 
-export function GeneratedColorCode() {
+interface GeneratedColorCodeProps {
+    redValue: number;
+    greenValue: number;
+    blueValue: number;
+}
+
+export function GeneratedColorCode(props: GeneratedColorCodeProps) {
     return (
         <ColorCode>
             rgb (
-            <span className="rgbRed">100</span>,&nbsp;
-            <span className="rgbGreen">234</span>,&nbsp;
-            <span className="rgbBlue">89</span>)
+            <span className="rgbRed">{props.redValue}</span>,&nbsp;
+            <span className="rgbGreen">{props.greenValue}</span>,&nbsp;
+            <span className="rgbBlue">{props.blueValue}</span>)
         </ColorCode>
     )
 }
