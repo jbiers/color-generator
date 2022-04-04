@@ -1,0 +1,42 @@
+import styled from 'styled-components'
+
+export const Container = styled.main`
+    width: 45rem;
+    margin: 2.438rem auto 0;
+    padding: 2.313rem;
+    border-radius: 0.188rem;
+    background: var(--light-gray);
+
+    .colors {
+        display: grid;
+        grid-template-columns: 10rem 10rem 10rem;
+        gap: 1.2rem;
+        margin: 0 auto;
+        justify-content: center;
+
+        .color {
+            height: 3rem;
+            width: 10rem;
+            border-radius: 0.188rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }   
+
+        .red {
+            background: var(--red);
+        }
+
+        .green {
+            background: var(--green);
+        }
+
+        .blue {
+            background: var(--blue);
+        }
+    }
+
+    @media (max-width: 700px) {
+        width: 100%;
+    }
+`

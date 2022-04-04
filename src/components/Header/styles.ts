@@ -1,24 +1,23 @@
 import styled from 'styled-components'
 
 export const Container = styled.header`
-    font-size: 3rem;
-    line-height: 3rem;
+    display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
 
-    display: flex;
-
-    width: 80%;
-    margin: 0 auto;
-
     h1 {
-        border: 1px solid black;
-        margin-top: 3rem;
+        margin-top: 5rem;
+        font-size: 3.625rem;
+        width: 80%;
     }
 
     @media (max-width: 1080px) {
+        h1 {
+            margin-top: 2rem;
+            line-height: 3rem;
+        }
+ 
         width: 100%;
-        font-size: 2rem;
     }
 `
