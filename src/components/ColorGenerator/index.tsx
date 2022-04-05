@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { GeneratedColor } from "../GeneratedColor"
 import { GeneratedColorCode } from "../GeneratedColorCode"
 import { Container } from "./styles"
@@ -11,15 +11,26 @@ function generateRGBString(redValue: number, greenValue: number, blueValue: numb
         + `${blueValue.toString(16).length > 1 ? blueValue.toString(16) : '0' + blueValue.toString(16)}`
 }
 
-function saveToLocalStorage(rgbValue: string) {
+function saveToLocalStorage(rgbValue: string, setCurrentId: Function) {
     if (localStorage.getItem('currentId') === null) {
         localStorage.setItem('currentId', '1')
+        setCurrentId(1)
     }
 
     const idNumber = parseInt(localStorage.getItem('currentId') as string)
 
-    localStorage.setItem('currentId', (idNumber + 1).toString())
-    localStorage.setItem(rgbValue, idNumber.toString())
+    if (localStorage.getItem('colors') === null) {
+        localStorage.setItem('colors', JSON.stringify({ [idNumber]: rgbValue }))
+        localStorage.setItem('currentId', (idNumber + 1).toString())
+        setCurrentId(idNumber + 1)
+    } else {
+        const currentColors = JSON.parse(localStorage.getItem('colors') as string)
+
+        currentColors[idNumber] = rgbValue
+        localStorage.setItem('currentId', (idNumber + 1).toString())
+        setCurrentId(idNumber + 1)
+        localStorage.setItem('colors', JSON.stringify(currentColors))
+    }
 }
 
 export function ColorGenerator() {
@@ -27,7 +38,10 @@ export function ColorGenerator() {
     const [greenValue, setGreenValue] = useState<number>(0)
     const [blueValue, setBlueValue] = useState<number>(0)
 
+    const [currentId, setCurrentId] = useState<number>(0)
     const rgbValue = generateRGBString(redValue, greenValue, blueValue)
+
+    useEffect(() => { }, [currentId])
 
     return (
         <Container>
@@ -51,7 +65,7 @@ export function ColorGenerator() {
 
             <button
                 className="addColorBtn"
-                onClick={() => saveToLocalStorage(rgbValue)}>
+                onClick={() => saveToLocalStorage(rgbValue, setCurrentId)}>
                 Save Color
             </button>
         </Container>

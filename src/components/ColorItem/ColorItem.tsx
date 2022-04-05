@@ -1,9 +1,13 @@
 import { Container } from "./styles";
 
-export function ColorItem() {
+interface ColorItemProps {
+    colorCode: string;
+}
+
+export function ColorItem(props: ColorItemProps) {
     return (
         <Container>
-            Hello World
+            {props.colorCode}
         </Container>
     )
 }
