@@ -1,46 +1,77 @@
-# Getting Started with Create React App
+<p align="center">
+  <img width="55": black" src="https://raw.githubusercontent.com/jbiers/color-generator/main/public/favicon.ico" alt="logo">
+</p>
+<h1 align="center">color-generator</h1>
+<p align="center">Generate and save RGB colors</p>
+    <p align="center">             
+<img src="https://img.shields.io/static/v1?label=License&message=MIT&color=33CC95&style=for-the-badge&logo=ghost"/>
+ </p> 
+                                                                                                                 
+                                                                                                                
+<p align="center">             
+<img src="https://user-images.githubusercontent.com/85142222/160461853-5e82b8fa-bcc8-4def-8618-e953cc3d9987.png"/>
+ </p> 
+ <p align="center">             
+<img src="https://user-images.githubusercontent.com/85142222/160462195-d6cfc4f1-94ac-4afc-b203-8415e9ee9e8b.png"/>
+ </p>                                                                                                               
+     
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+                                                                                                  
+### ❔ About                                                                          
+---                                                                                                                 
+App loosely based on an idea from the DevChallenge website, built with React, Styled Components and saving data to Local Storage.
+                                                                                                                
+### 🎈 Features
+---
+- [x] Mix a new color
+- [x] Save colors to local storage
+- [x] Remove colors
+                                                                                                                 
+### 🖥 How to use it
+---                                                                                                                 
+  You can check the live version [HERE](https://a-color-generator.netlify.app/)
+                                                                                                                 
+  Or run locally
+  ```bash
+# Clone this repository
+$ git clone <https://github.com/jbiers/color-generator>
 
-## Available Scripts
+# Access the project folder
+$ cd color-generator
 
-In the project directory, you can run:
+# Install the dependencies
+$ npm install
 
-### `npm start`
+# Start application in development mode
+$ npm run start
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# The server will start on port: 3000. Access <http://localhost:3000>
+```                                                                                                              
+                                                                                                                 
+### 🛠 Technologies
+---
+The following technologies were used in the development of this project:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- [React](https://pt-br.reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Styled Components](https://styled-components.com/)                                                                                                               
+                         
+### 📚 Learned
+---
+- Save and retrieve data from Local Storage.
+- More practice with React states and hooks.
+- CSS in JS using Styled Components.
+- Sharing variables among multiple React components using Context.
+                                                                  
+### 👩 Author
+---
+<a href="https://github.com/jbiers">
+ <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/85142222?s=400&u=e71d212eafda371d12260e53154b40970ebeb4be&v=4" width="100px;" alt=""/>
+ <br />
+ <sub><b>Julia Bier</b></sub></a>
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Made with ❤️ by Julia Bier 👋🏽 Contact me!
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+ [![Linkedin Badge](https://img.shields.io/badge/-Julia-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/julia-bier-suriano/)](https://www.linkedin.com/in/tgmarinho/) 
+[![Gmail Badge](https://img.shields.io/badge/-juliabiersuriano@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:juliabiersuriano@gmail.com)](mailto:juliabiersuriano@gmail.com)
