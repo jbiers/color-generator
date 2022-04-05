@@ -3,6 +3,15 @@ import { GeneratedColor } from "../GeneratedColor"
 import { GeneratedColorCode } from "../GeneratedColorCode"
 import { Container } from "./styles"
 
+interface Colors {
+    Number: string;
+}
+
+interface ColorGeneratorProps {
+    colors: Colors;
+    setColors: Function;
+}
+
 function generateRGBString(redValue: number, greenValue: number, blueValue: number) {
 
     return '#'
@@ -33,7 +42,7 @@ function saveToLocalStorage(rgbValue: string, setCurrentId: Function) {
     }
 }
 
-export function ColorGenerator() {
+export function ColorGenerator({ colors, setColors }: ColorGeneratorProps) {
     const [redValue, setRedValue] = useState<number>(0)
     const [greenValue, setGreenValue] = useState<number>(0)
     const [blueValue, setBlueValue] = useState<number>(0)
@@ -41,7 +50,9 @@ export function ColorGenerator() {
     const [currentId, setCurrentId] = useState<number>(0)
     const rgbValue = generateRGBString(redValue, greenValue, blueValue)
 
-    useEffect(() => { }, [currentId])
+    useEffect(() => {
+        setColors(JSON.parse(localStorage.getItem('colors') as string))
+    }, [currentId])
 
     return (
         <Container>
