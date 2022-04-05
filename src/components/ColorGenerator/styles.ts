@@ -25,6 +25,10 @@ export const Container = styled.main`
             display: flex;
             justify-content: center;
             align-items: center;
+
+            input {
+                width: 85%;
+            }
         }   
 
         .red {
