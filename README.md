@@ -4,17 +4,13 @@
 <h1 align="center">color-generator</h1>
 <p align="center">Generate and save RGB colors</p>
     <p align="center">             
-<img src="https://img.shields.io/static/v1?label=License&message=MIT&color=33CC95&style=for-the-badge&logo=ghost"/>
+<img src="https://img.shields.io/static/v1?label=License&message=MIT&color=363940&style=for-the-badge&logo=ghost"/>
  </p> 
                                                                                                                  
                                                                                                                 
 <p align="center">             
-<img src="https://user-images.githubusercontent.com/85142222/160461853-5e82b8fa-bcc8-4def-8618-e953cc3d9987.png"/>
- </p> 
- <p align="center">             
-<img src="https://user-images.githubusercontent.com/85142222/160462195-d6cfc4f1-94ac-4afc-b203-8415e9ee9e8b.png"/>
- </p>                                                                                                               
-     
+<img src="https://user-images.githubusercontent.com/85142222/161788231-a9f20ad5-25d2-4efa-9cc4-b4f63065f636.png"/>
+ </p>                                                                                                             
 
                                                                                                   
 ### ❔ About                                                                          
