@@ -6,10 +6,11 @@ interface Colors {
 }
 
 interface ColorListProps {
-    colors: Colors
+    colors: Colors;
+    setColors: Function;
 }
 
-export function ColorList({ colors }: ColorListProps) {
+export function ColorList({ colors, setColors }: ColorListProps) {
     if (colors === null) {
         return (
             <Container>
@@ -22,7 +23,7 @@ export function ColorList({ colors }: ColorListProps) {
         <Container>
             {Object.keys(colors).reverse().map(key => {
                 return (
-                    <ColorItem colorCode={colors[key as keyof Colors]} itemId={key}></ColorItem>
+                    <ColorItem setColors={setColors} colorCode={colors[key as keyof Colors]} itemId={key}></ColorItem>
                 )
             })}
         </Container>

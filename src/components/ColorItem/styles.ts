@@ -23,7 +23,20 @@ export const Container = styled.div`
     }
 
     .deleteColor {
-        width: 2rem;
-        height: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        background: transparent;
+        transition: 0.2s filter;
+
+        &:hover {
+                filter: opacity(60%);
+            }
+
+        img {
+            width: 1.2rem;
+            height: 1.2rem;
+        }
     }
 `

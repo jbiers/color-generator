@@ -11,7 +11,7 @@ export function App() {
     <>
       <Header />
       <ColorGenerator colors={colors} setColors={setColors} />
-      <ColorList colors={colors} />
+      <ColorList colors={colors} setColors={setColors} />
 
       <GlobalStyle />
     </>
