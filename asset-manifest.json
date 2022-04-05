@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.js": "/static/js/main.bca1276e.js",
-    "index.html": "/index.html",
-    "static/media/trash.svg": "/static/media/trash.bba7f8a90befcbd8f9c03856bf0b3e29.svg",
-    "main.bca1276e.js.map": "/static/js/main.bca1276e.js.map"
+    "main.js": "/color-generator/static/js/main.b6de2272.js",
+    "index.html": "/color-generator/index.html",
+    "static/media/trash.svg": "/color-generator/static/media/trash.bba7f8a90befcbd8f9c03856bf0b3e29.svg",
+    "main.b6de2272.js.map": "/color-generator/static/js/main.b6de2272.js.map"
   },
   "entrypoints": [
-    "static/js/main.bca1276e.js"
+    "static/js/main.b6de2272.js"
   ]
 }
