@@ -11,6 +11,17 @@ function generateRGBString(redValue: number, greenValue: number, blueValue: numb
         + `${blueValue.toString(16).length > 1 ? blueValue.toString(16) : '0' + blueValue.toString(16)}`
 }
 
+function saveToLocalStorage(rgbValue: string) {
+    if (localStorage.getItem('currentId') === null) {
+        localStorage.setItem('currentId', '1')
+    }
+
+    const idNumber = parseInt(localStorage.getItem('currentId') as string)
+
+    localStorage.setItem('currentId', (idNumber + 1).toString())
+    localStorage.setItem(rgbValue, idNumber.toString())
+}
+
 export function ColorGenerator() {
     const [redValue, setRedValue] = useState<number>(0)
     const [greenValue, setGreenValue] = useState<number>(0)
@@ -38,7 +49,11 @@ export function ColorGenerator() {
             <GeneratedColor rgbValue={rgbValue} />
             <GeneratedColorCode redValue={redValue} greenValue={greenValue} blueValue={blueValue} />
 
-            <button className="addColorBtn">Save Color</button>
+            <button
+                className="addColorBtn"
+                onClick={() => saveToLocalStorage(rgbValue)}>
+                Save Color
+            </button>
         </Container>
     )
 }
