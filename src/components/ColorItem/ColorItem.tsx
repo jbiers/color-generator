@@ -2,11 +2,12 @@ import { Container } from "./styles";
 
 interface ColorItemProps {
     colorCode: string;
+    itemId: string;
 }
 
-export function ColorItem({ colorCode }: ColorItemProps) {
+export function ColorItem({ colorCode, itemId }: ColorItemProps) {
     return (
-        <Container colorCode={colorCode}>
+        <Container colorCode={colorCode} className={itemId}>
             {colorCode}
 
             <div className="colorSample"></div>

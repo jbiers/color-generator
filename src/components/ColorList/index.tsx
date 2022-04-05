@@ -17,12 +17,12 @@ export function ColorList({ colors }: ColorListProps) {
             </Container>
         )
     }
-
+    //
     return (
         <Container>
             {Object.keys(colors).reverse().map(key => {
                 return (
-                    <ColorItem colorCode={colors[key as keyof Colors]}></ColorItem>
+                    <ColorItem colorCode={colors[key as keyof Colors]} itemId={key}></ColorItem>
                 )
             })}
         </Container>
