@@ -6,7 +6,8 @@ interface Props {
 
 export const Container = styled.div`
     display: grid;
-    grid-template-columns: 1.5fr 6fr 0.5fr;
+    grid-template-columns: 4rem 6fr 1.5rem;
+    gap: 3rem;
     align-items: center;
     background: var(--very-light-gray);
     font-weight: 600;
