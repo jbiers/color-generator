@@ -1,9 +1,5 @@
 import styled from "styled-components"
 
-interface Props {
-    color?: string;
-}
-
 export const Color = styled.div.attrs(props => ({
     style: {
         background: props.color,

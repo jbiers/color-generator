@@ -4,10 +4,14 @@ interface ColorItemProps {
     colorCode: string;
 }
 
-export function ColorItem(props: ColorItemProps) {
+export function ColorItem({ colorCode }: ColorItemProps) {
     return (
-        <Container>
-            {props.colorCode}
+        <Container colorCode={colorCode}>
+            {colorCode}
+
+            <div className="colorSample"></div>
+
+            <button className="deleteColor">X</button>
         </Container>
     )
 }
